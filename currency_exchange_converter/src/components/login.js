@@ -1,11 +1,15 @@
-// AuthPage.js
-import React, { useState } from 'react';
+// login.js
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState("");
+  const history = useHistory();
 
   const handleLogin = () => {
-    // Handle login logic, e.g., store username in state or local storage
+    // Will use this for the login logic
+    localStorage.setItem("username", username);
+    history.push("/convert"); // We will use this to go back to the convert page (currently not working due to an error with useHistory)
   };
 
   return (
