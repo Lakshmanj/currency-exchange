@@ -5,7 +5,7 @@ const History = ({ conversions }) => {
     <ul>
       {conversions.map((conversion, index) => (
         <li key={index}>
-          {/* Your conversion details go here */}
+          {/* We will enter past conversions here for users, however, currently we cannot resolve errors with the UseHistory*/}
         </li>
       ))}
     </ul>

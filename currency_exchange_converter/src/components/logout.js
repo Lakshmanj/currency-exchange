@@ -1,13 +1,12 @@
-// LogoutButton.js
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import { useHistory } from "react-router-dom";
 
 const LogoutButton = () => {
   const history = useHistory();
 
-  const handleLogout = () => {
-    // Handle logout logic, e.g., clear user data from state or local storage
-    history.push('/login');
+  const handleLogout = () => { // Will use this for handling logic of logout
+    localStorage.removeItem("username"); 
+    history.push("/login"); 
   };
 
   return (
