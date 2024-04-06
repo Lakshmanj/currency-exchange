@@ -1,15 +1,15 @@
 // login.js
 import React, { useState } from "react";
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [username, setUsername] = useState("");
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     // Will use this for the login logic
     localStorage.setItem("username", username);
-    history.push("/convert"); // We will use this to go back to the convert page (currently not working due to an error with useHistory)
+    navigate("/convert"); // Navigate to "/convert" route
   };
 
   return (

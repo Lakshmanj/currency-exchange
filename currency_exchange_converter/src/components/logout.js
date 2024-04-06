@@ -1,12 +1,13 @@
+// logout.js
 import React from "react";
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const LogoutButton = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
-  const handleLogout = () => { // Will use this for handling logic of logout
-    localStorage.removeItem("username"); 
-    history.push("/login"); 
+  const handleLogout = () => {
+    localStorage.removeItem("username");
+    navigate("/login"); // Navigate to "/login" route
   };
 
   return (
