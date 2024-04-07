@@ -34,3 +34,5 @@ const information =() =>{
         </div>
     )
 }
+
+export default information;
