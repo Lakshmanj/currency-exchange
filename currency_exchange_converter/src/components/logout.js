@@ -1,4 +1,3 @@
-// logout.js
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 
@@ -7,11 +6,11 @@ const LogoutButton = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("username");
-    navigate("/login"); // Navigate to "/login" route
+    navigate("/login"); 
   };
 
   return (
-    <div>
+    <div className="login-form">
       <button onClick={handleLogout}>Logout</button>
     </div>
   );

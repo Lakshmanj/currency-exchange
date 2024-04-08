@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.ConversionPage {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ConversionPage h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ConversionPage input[type="number"],
+.ConversionPage select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ConversionPage button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ConversionPage button:hover {
+  background-color: #0056b3;
+}
+
+.ConversionPage p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.information {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.information h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.information h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.information ol {
+  margin-left: 20px;
+}
+
+.information ol li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.information ol li:first-child {
+  font-weight: bold;
+}
+
+.information ol li:last-child {
+  margin-bottom: 0;
 }
